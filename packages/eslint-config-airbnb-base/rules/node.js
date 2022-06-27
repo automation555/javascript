@@ -5,14 +5,14 @@ module.exports = {
 
   rules: {
     // enforce return after a callback
-    'callback-return': 'off',
+
 
     // require all requires be top-level
     // https://eslint.org/docs/rules/global-require
-    'global-require': 'error',
+
 
     // enforces error handling in callbacks (node environment)
-    'handle-callback-err': 'off',
+
 
     // disallow use of the Buffer() constructor
     // https://eslint.org/docs/rules/no-buffer-constructor
