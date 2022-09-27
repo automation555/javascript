@@ -1,7 +1,8 @@
 version: 1
-## Please visit https://docs.embold.io/v2-quick-start-guide/#update-configurations to know more
-#languages: 'JAVA,CPP,JAVASCRIPT'
-# Sources mention which Files/Dirs to be taken for Analysis
+
+# Please visit https://docs.embold.io/v2-quick-start-guide/#default-configurations 
+#  to know more about configurations available
+
 sources:
   #Files or Directories to be Excluded are mentioned in exclusions
   exclusions:
@@ -19,18 +20,19 @@ sources:
     - 'gulp'
     - 'grunt'
     - 'library'
-    - 'libs'
     - '.git'
-    - 'demosubproject'
+    
+# Specify the languages you would like to Scan. Default is all Detected
+#languages: 'JAVA,CPP'
 
-#Specify modules you would like to enable or disable.
+
+# Define modules one would like to run or disable. This is enough for Basic Users
+# Get List of Modules (Which are Default Enabled/Disabled) at the documentation link above
 #modules:
-#    - name: gamma_java
-#      enabled: true
-#      rules:
-#         - key: 'EMB-JAVA-10'
-#           enabled: false
-#    - name: pmd
-#      enabled: true
+#  - name: pmd
+#    enabled: true
+#  - name: gamma_cxx
+#    enabled: false
+#  - name: jshint
+#    enabled: true
 
-## Please visit https://docs.embold.io/v2-quick-start-guide/#update-configurations to know more
